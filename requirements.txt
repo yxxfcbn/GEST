@@ -1,0 +1,19 @@
+# Core numerical / graph dependencies
+numpy>=1.26,
+scipy>=1.11,
+networkx>=3.2,
+
+# Deep learning
+# The default PyPI torch wheel installs the CPU build unless your environment chooses otherwise.
+# For a specific CUDA build, install PyTorch first from https://pytorch.org/get-started/locally/
+# Example CUDA 12.1:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+torch>=2.3,
+
+# PyTorch Geometric, used by torch_geometric.data.Data, DataLoader and GATv2Conv
+torch-geometric>=2.5,
+
+# SCIP Python interface, used by tsp_scip_solve.py
+# If installation fails on Windows, install the SCIP Optimization Suite first:
+# https://www.scipopt.org/index.php#download
+pyscipopt>=5.0,
